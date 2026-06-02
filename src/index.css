@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Redefine Zinc to fit High Density dark styling values (#0f0f0f, #0a0a0a, #000000) */
+  --color-zinc-950: #0f0f0f;
+  --color-zinc-900: #0a0a0a;
+  --color-zinc-850: rgba(255, 255, 255, 0.05); /* matching border-white/5 style */
+  --color-zinc-805: rgba(255, 255, 255, 0.08);
+  --color-zinc-800: rgba(255, 255, 255, 0.1);  /* matching border-white/10 style */
+  --color-zinc-750: rgba(255, 255, 255, 0.15); /* matching hover:bg-white/15 style */
+  --color-zinc-700: rgba(255, 255, 255, 0.2);  /* matching border-white/20 style */
+  --color-zinc-600: rgba(255, 255, 255, 0.4);
+  --color-zinc-500: rgba(255, 255, 255, 0.5);
+  --color-zinc-400: rgba(255, 255, 255, 0.65);
+  --color-zinc-300: #e5e5e5;
+  --color-zinc-200: #f1f1f1;
+  --color-zinc-100: #ffffff;
+}
+
+@layer base {
+  body {
+    background-color: #0f0f0f;
+    color: #f1f1f1;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Custom Scrollbar Styles to mimic fluid mobile app */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #09090b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
+
+/* Hide scrollbars for story bar and slider containers */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+

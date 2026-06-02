@@ -1,0 +1,6 @@
+{
+  "name": "Video and Photo Sharing Platform",
+  "description": "A hybrid platform of YouTube and Instagram featuring long-form video playback, custom short-form reels, circular stories, picture feeds, customizable creation forms, and unified profiles.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
